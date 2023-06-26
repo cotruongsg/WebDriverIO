@@ -126,17 +126,17 @@ exports.config = {
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
     "spec",
-    // ["allure", { outputDir: "allure-results" }]
-    [
-      "junit",
-      {
-        outputDir: "junit-reports",
-        outputFileFormat: function (options) {
-          return `results-${new Date().getTime()}.xml`;
-          //   return `results-${options.cid}.${options.capabilities}.xml`;
-        },
-      },
-    ],
+    ["allure", { outputDir: "allure-results" }],
+    // [
+    //   "junit",
+    //   {
+    //     outputDir: "junit-reports",
+    //     outputFileFormat: function (options) {
+    //       return `results-${new Date().getTime()}.xml`;
+    //       //   return `results-${options.cid}.${options.capabilities}.xml`;
+    //     },
+    //   },
+    // ],
   ],
 
   //
